@@ -5,8 +5,9 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   this.top = top;
   this.left = left;
-  this.step();
-  this.setPosition(top, left);
+  //this.setPosition(top, left);
+  //this.step();
+  
 
 
   //this.step();
@@ -35,8 +36,16 @@ MakeDancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+MakeDancer.prototype.lineUp = function (top) {
+  top =  $('body').height() - 200
+  this.setPosition(top)
+  console.log('I\'m in line up')
+  //this.$node.css(top);
+}
 
-
+MakeDancer.prototype.interact = function (){
+  var distance = $()
+}
 
 
 

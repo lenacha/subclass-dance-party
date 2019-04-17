@@ -5,6 +5,9 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url("https://pokemongohub.net/wp-content/uploads/2018/12/Trainer-Battles-Arena.jpg");
+  background-size: cover;
+  background-attachment: auto;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -20,8 +23,44 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+.myDancer1{
+  height: 10%;
+  width: 5%;
+  position:absolute;
+  border-radius: 85%;
+  animation: grow 3s infinite linear;
+};
+@keyframes grow {
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{transform: scale(1);}
+}
+
+.myDancer1:hover{
+  position: relative;
+  height: 12%;
+  width: 6%;
+  display: block;
+
+}
+
 .dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
 }
+
+.myDancer{
+  position:absolute;
+  animation: rotation 3s infinite linear;  
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+};
+
